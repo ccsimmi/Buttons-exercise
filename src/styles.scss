@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+// Colours
+$primary: #03857f;
+$secondary: #fff;
+$foreground: #484848;
+$grey: #f4f4f4;
+
+// Sizing
+$size-1: 0.25em;
+$size-2: 0.5em;
+$size-3: 0.75em;
+$size-4: 1em;
+$size-5: 2em;
+$size-6: 4em;
+
+body {
+  color: $foreground;
+  margin: $size-5;
+}
+
+button {
+  cursor: pointer;
+  padding: $size-4 $size-5;
+  border: 2px solid transparent;
+  border-radius: 0.25em;
+  width: 100%;
+  max-width: 200px;
+  background-color: $primary;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.2s linear;
+}
+
+button:hover {
+  background-color: $secondary;
+  border: solid $primary 2px;
+  color: $primary;
+}
+
+button:focus {  
+  background-color: $primary;
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+  color: $secondary;
+}
+
+button:disabled {
+  background-color: $grey;
+  color: inherit;
+  cursor: not-allowed;
+}
+
+button:disabled:hover, button:disabled:focus {
+  border: 2px solid transparent;
+  background-color: $grey;
+  color: inherit;
+}
