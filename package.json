@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/styles.scss dist/styles.css"
+    "build:css": "sass src/styles.scss dist/styles.css",
+    "dev:css": "sass --watch src/styles.scss dist/styles.css"
   },
   "keywords": [],
   "author": "ccsimmi",
