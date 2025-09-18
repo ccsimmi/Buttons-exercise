@@ -1,0 +1,15 @@
+{
+  "name": "volunteering-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/styles.scss dist/styles.css"
+  },
+  "keywords": [],
+  "author": "ccsimmi",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
+}
